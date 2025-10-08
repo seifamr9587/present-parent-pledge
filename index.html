@@ -285,6 +285,70 @@
             <!-- Content End -->
         </div>
     </section>
+    <form id="lead-magnet-form">
+  <input type="email" id="email-input" placeholder="Enter your email" required />
+  <button type="submit">Get the Printable</button>
+</form>
+
+<p id="success-message" class="hidden">✅ Thank you! Your printable is on the way...</p>
+
+<script>
+document.getElementById("lead-magnet-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  const email = document.getElementById("email-input").value.trim();
+  const form = e.target;
+  const successMessage = document.getElementById("success-message");
+
+  // 🔹 ضع هنا رابط الـApps Script الذي نسخته من النشر
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyd9B6lr97PrV4yuVcyjn9SRj97iXcgZw9P2rAT2vXCIhNWtD8IbxeCIokW5SqaShuiHA/exec";
+  // 🔹 ضع هنا رابط تحميل الـPDF أو الصورة الخاصة بـ Tech-Free Triangle Tracker
+  const downloadLink = "https://drive.google.com/file/d/1AHV73vjD5gl4I7ONH9kB3Gdpd1MuqX4-/view?usp=sharing";
+
+  try {
+    // نرسل الطلب بدون انتظار رد (لتفادي CORS)
+    fetch(scriptURL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: "email=" + encodeURIComponent(email)
+    });
+
+    form.classList.add("hidden");
+    successMessage.classList.remove("hidden");
+
+    // نفتح رابط التحميل بعد ثانية ونصف
+    setTimeout(() => {
+      window.open(downloadLink, "_blank");
+    }, 1500);
+  } catch (err) {
+    alert("Something went wrong, please try again later.");
+  }
+});
+</script>
+
+<style>
+.hidden { display: none; }
+form { display: flex; gap: 10px; flex-direction: column; max-width: 300px; margin: 20px auto; }
+input, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+button {
+  background-color: #6c9c7a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover { background-color: #588363; }
+#success-message {
+  text-align: center;
+  color: #3e7047;
+  font-weight: bold;
+}
+</style>
+
 
     <!-- TESTIMONIALS (Social Proof) -->
     <section class="py-16 bg-gray-50">
