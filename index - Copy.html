@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Present Parent Pledge - End the Phone-First Reflex</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for the "Inter" font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Custom styles for soft shadows and smooth transitions */
+        .card-shadow {
+            box-shadow: 0 8px 25px -4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-shadow:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.15);
+        }
+        .btn-primary {
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 15px rgba(239, 68, 68, 0.5);
+        }
+
+        /* Styling for the new long-form content section */
+        .long-form-content h2 {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 800; /* font-extrabold */
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: #4338ca; /* Indigo 700 */
+            border-bottom: 3px solid #e0e7ff; /* Indigo 100 */
+            padding-bottom: 0.75rem;
+        }
+
+        .long-form-content h3 {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 700; /* font-bold */
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: #374151;
+        }
+
+        .long-form-content p, .long-form-content li {
+            margin-bottom: 1.25rem;
+            line-height: 1.75;
+            color: #4b5563;
+        }
+
+        .long-form-content ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .long-form-content strong {
+            color: #1f2937; 
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- NAVIGATION (Simple Header) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-indigo-600">The Pledge</h1>
+            <!-- CTA links directly to Whop, opens in new tab -->
+            <a href="https://whop.com/parent/the-present-parent-pledge-3f/" target="_blank" class="px-4 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 hover:shadow-md">Get Instant Access</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Corrected Layout and Emotional Hook) -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-indigo-50/70 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            
+            <!-- Text Content --><div class="md:w-1/2 text-center md:text-left order-2 md:order-1">
+                <p class="text-sm font-semibold uppercase text-red-600 mb-2 tracking-widest">A Guilt-Free System for Parents</p>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-gray-900">
+                    Stop Missing Their Childhood. End the <span class="text-indigo-600">'Phone-First'</span> Reflex Today.
+                </h2>
+                <!-- Hero Trust Element --><p class="text-sm font-semibold text-gray-500 mb-6">
+                    <span class="text-green-600 font-bold">✓</span> Written by real parents. Backed by child development research.
+                </p>
+                
+                <p class="text-lg text-gray-700 mb-8 max-w-lg mx-auto md:mx-0">
+                    **You Don't Need Guilt. You Need a System.** Discover the 3-step blueprint to instantly switch off the distraction and turn on deep connection with your child, starting tonight.
+                </p>
+
+                <!-- UPDATED CTA WITH DISCOUNT PRICING -->
+                <a href="https://whop.com/parent/the-present-parent-pledge-3f/" target="_blank" class="btn-primary inline-block px-10 py-4 text-lg font-bold text-white bg-red-500 rounded-xl shadow-lg hover:bg-red-600 uppercase tracking-wider">
+                    <span class="text-sm line-through mr-2 font-normal text-red-300">$19.99</span> NOW $9.99
+                </a>
+                <!-- Micro-Copy --><p class="text-sm text-red-600 font-semibold mt-3">
+                    Launch Special! Price goes up soon. Instant download.
+                </p>
+            </div>
+
+            <!-- eBook Image Mockup and Checklist (Simplified Layout) --><div class="md:w-1/2 flex flex-col items-center order-1 md:order-2">
+                <!-- *** CORRECTED IMAGE SRC TO THE SPECIFIED FILENAME *** -->
+                <img src="ebook_cover.jpg" 
+                    alt="The Present Parent Pledge eBook Cover"
+                    class="w-64 h-96 md:w-80 md:h-auto rounded-xl card-shadow shadow-indigo-300"
+                    onerror="this.src='https://placehold.co/320x480/4f46e5/ffffff?text=EBOOK+COVER+MISSING'">
+                
+                <!-- Quick Preview List: NOW ALWAYS BELOW THE COVER ON MOBILE, AND SLIGHTLY OFFSET ON DESKTOP -->
+                <div class="mt-8 bg-white p-5 rounded-xl card-shadow border border-indigo-100 w-full max-w-sm">
+                    <p class="font-bold text-base mb-3 text-indigo-600 border-b pb-2 border-indigo-100">Here's What You'll Learn Inside:</p>
+                    <ul class="text-base text-gray-700 space-y-2 text-left">
+                        <li class="flex items-start"><span class="text-green-500 mr-2 mt-1">✓</span> **Chapter 1:** The 3 proven phone boundaries that work for any age.</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2 mt-1">✓</span> **Chapter 2:** 9 low-effort, 5-minute connection tools (The Analog Arsenal).</li>
+                        <li class="flex items-start"><span class="text-green-500 mr-2 mt-1">✓</span> **Chapter 3:** Real scripts for family alignment and handling your own relapse guilt.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PROBLEM ACKNOWLEDGMENT SECTION (Why You Need This) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold text-gray-900 mb-4">You Don't Need Guilt. You Need a System.</h3>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                If you've ever felt the sting of these moments, this book is your simple reset button:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pain Point 1 --><div class="p-6 rounded-xl border border-red-100 bg-red-50 card-shadow">
+                    <div class="text-red-500 text-3xl mb-3">📵</div>
+                    <h4 class="text-xl font-semibold mb-2">The Divided Dinner</h4>
+                    <p class="text-gray-600">Dinner is silent because everyone, including you, is staring down at a screen instead of talking.</p>
+                </div>
+                <!-- Pain Point 2 --><div class="p-6 rounded-xl border border-red-100 bg-red-50 card-shadow">
+                    <div class="text-red-500 text-3xl mb-3">😭</div>
+                    <h4 class="text-xl font-semibold mb-2">The Meltdown Trap</h4>
+                    <p class="text-gray-600">Your child throws a tantrum right when you walk in the door, and your reflex is to check out on your phone.</p>
+                </div>
+                <!-- Pain Point 3 --><div class="p-6 rounded-xl border border-red-100 bg-red-50 card-shadow">
+                    <div class="text-red-500 text-3xl mb-3">🛌</div>
+                    <h4 class="text-xl font-semibold mb-2">The Rush-to-Bed Routine</h4>
+                    <p class="text-gray-600">Bedtime feels like a chore, rushed because you just need to get back to your device and disconnect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION (The 3-Step System) -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold text-gray-900 mb-12">The 3-Step System That Creates Instant Presence</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <!-- Chapter 1 Feature --><div class="p-8 bg-white rounded-xl card-shadow border-t-4 border-indigo-600">
+                    <span class="text-4xl text-indigo-600 mb-4 inline-block font-black">1</span>
+                    <h4 class="text-xl font-bold mb-3">Chapter 1: The Tech-Free Triangle</h4>
+                    <p class="text-gray-600 mb-4">
+                        Learn the **3 non-negotiable moments** (Mealtime, Critical 30, Bedtime) where your phone goes away. Consistency, not perfection.
+                    </p>
+                    <p class="text-sm font-semibold text-indigo-500">→ Set the Rules and Boundaries</p>
+                </div>
+
+                <!-- Chapter 2 Feature --><div class="p-8 bg-white rounded-xl card-shadow border-t-4 border-indigo-600">
+                    <span class="text-4xl text-indigo-600 mb-4 inline-block font-black">2</span>
+                    <h4 class="text-xl font-bold mb-3">Chapter 2: The Analog Arsenal</h4>
+                    <p class="text-gray-600 mb-4">
+                        A toolkit of **low-effort, screen-free activities** (The WHAT) designed to replace the habit of scrolling and foster instant connection.
+                    </p>
+                    <p class="text-sm font-semibold text-indigo-500">→ Master the Replacement Activities</p>
+                </div>
+
+                <!-- Chapter 3 Feature --><div class="p-8 bg-white rounded-xl card-shadow border-t-4 border-indigo-600">
+                    <span class="text-4xl text-indigo-600 mb-4 inline-block font-black">3</span>
+                    <h4 class="text-xl font-bold mb-3">Chapter 3: Facing the Resistance</h4>
+                    <p class="text-gray-600 mb-4">
+                        Actionable scripts and strategies to handle resistance from your **partner, family, and your own internal guilt** and relapses.
+                    </p>
+                    <p class="text-sm font-semibold text-indigo-500">→ Sustain the Change Long-Term</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LONG-FORM CONTENT INTEGRATION (The 1400 Words) -->
+    <section class="py-16 bg-white long-form-content">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-center">The Deep Dive: Full 30-Day Program Breakdown</h2>
+
+            <!-- Content Start -->
+            
+            <h3 id="system-details">The Failure of Willpower vs. The Power of System</h3>
+            <p>Traditional advice fails because it focuses on a moral flaw—telling you that you just need to *try harder*. **The Present Parent Pledge** rejects this premise entirely. We acknowledge that modern technology is a powerful force, and fighting it with sheer willpower is a recipe for failure. </p>
+            <p>This comprehensive guide is built on the revolutionary idea that **systems defeat struggle.** Instead of fighting against your habits, we provide a 30-day framework designed to **outsmart** them. We replace vague intentions with clear, repeatable actions rooted in behavioral science and cognitive psychology.</p>
+            <p>We analyze the three main pillars of parental distraction and provide dedicated modules to dismantle each one:</p>
+            <ul>
+                <li>**The Trigger Environment:** Your surroundings are set up for distraction (e.g., phone charging next to your bed, or notifications chiming during dinner).</li>
+                <li>**The Mental Default:** Your brain has been conditioned to crave the tiny dopamine hit of a notification, making checking your phone a subconscious, automatic response.</li>
+                <li>**The Lack of Replacement Behavior:** You put the phone down, but you haven't replaced that habit with a fulfilling, immediate, and easy alternative.</li>
+            </ul>
+            <p>The Pledge systematically tackles all three, leading to genuine, sustainable change that lasts far beyond the first 30 days.</p>
+
+            <h3 id="module1">Module 1: The Guilt Elimination Protocol (Days 1–7)</h3>
+            <p>Before you can change your habits, you must change your mindset. This module focuses on understanding why you feel distracted and replacing self-criticism with self-compassion and clarity.</p>
+            <ul>
+                <li>**Audit Your Attention:** A simple tool to track exactly *when* and *where* you lose focus. You can't fix what you don't measure.</li>
+                <li>**The Intentional Communication Script:** Learn how to talk to your partner or children about your commitment to presence, turning this journey into a shared family goal rather than a solo struggle.</li>
+                <li>**Defining the "Why":** Reconnect with your deepest values as a parent to create a powerful emotional motivator that overrides the urge to scroll.</li>
+            </ul>
+
+            <h3 id="module2">Module 2: Building the Anchor Zones (Days 8–14)</h3>
+            <p>This module is all about engineering your environment to make presence the easiest choice.</p>
+            <ul>
+                <li>**The Physical Barrier Method:** Implement strategic physical changes (like the "Phone Dock" and "Tech Basket" systems) to create reliable, non-negotiable tech-free zones in your home.</li>
+                <li>**Digital Detox Blueprints:** Simple guides for setting up automatic notifications, screen limits, and focus modes on your devices without needing complex apps.</li>
+                <li>**The "Attention Anchor" Technique:** A quick, 30-second ritual you use before interacting with your family to ensure you are fully focused and attentive, transforming scattered attention into meaningful engagement.</li>
+            </ul>
+
+            <h3 id="module3">Module 3: Mastering Communication and Connection (Days 15–21)</h3>
+            <p>It's not enough to be *in* the room; you must be *with* your child. This module focuses on the interaction quality.</p>
+            <ul>
+                <li>**The Active Listening Loop:** A powerful three-step communication method guaranteed to make your children feel genuinely heard and understood. This technique improves behavior and deepens your bond instantly.</li>
+                <li>**The 5-Minute Huddle:** Discover how to use five minutes of truly focused, device-free time each day to maximize connection and minimize conflict.</li>
+                <li>**Handling Interruptions:** Practical strategies for managing distractions (from work, from your own mind) when you are in a committed moment of family time.</li>
+            </ul>
+
+            <h3 id="module4">Module 4: Sustaining the Pledge (Days 22–30)</h3>
+            <p>Change isn't a destination; it's maintenance. This module secures your new, healthy habits for the long term.</p>
+            <ul>
+                <li>**The Relapse Recovery Plan:** What to do when you inevitably slip up (because you will, and that's okay!)—a simple path back to presence without spiraling into guilt.</li>
+                <li>**The Quarterly Check-In:** A system for regularly assessing your tech habits as your children grow and your needs change, ensuring the Pledge evolves with your family.</li>
+                <li>**Future-Proofing Your Focus:** Simple hacks to prevent new distractions (like smartwatches or new apps) from derailing the progress you’ve made.</li>
+            </ul>
+
+            <h3 id="why">Why This Blueprint is the Last Guide You Will Need</h3>
+            <p>We know you are skeptical. You've probably read articles or heard advice that didn't stick. The **Present Parent Pledge** is different because:</p>
+            <ul>
+                <li>**It’s Not Just Theory:** Every single chapter provides concrete steps and immediate actions. This is a **workbook and a framework**, not just a book to be read.</li>
+                <li>**It’s Research-Backed:** We’ve compiled best practices and insights from leading experts in behavioral economics, organizational psychology, and child development to create a system that addresses the *mechanics* of distraction.</li>
+                <li>**It’s Built for Busy People:** We don't ask you to quit your job or give up all technology. We teach you how to integrate powerful moments of presence into your existing, busy life.</li>
+                <li>**It’s Delivered Instantly:** As a comprehensive eBook (PDF), you can download the Pledge immediately, start reading, and begin implementing the first step **tonight.**</li>
+            </ul>
+            <p>We are providing you with the exact roadmap that has helped hundreds of other parents stop fighting the phone and start focusing on what truly matters.</p>
+            <!-- Content End -->
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS (Social Proof) -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold text-gray-900 mb-10">Real Results from Real Parents</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 --><blockquote class="p-6 bg-white rounded-xl card-shadow text-left border border-gray-100">
+                    <p class="italic text-gray-700 mb-4">"The 'Critical 30 Minutes' section was a game-changer. My evening meltdowns have dropped by half just by following the three-minute parent reset. It actually works!"</p>
+                    <footer class="font-semibold text-sm text-gray-800">— Sarah K., Mom of 2</footer>
+                </blockquote>
+                <!-- Testimonial 2 --><blockquote class="p-6 bg-white rounded-xl card-shadow text-left border border-gray-100">
+                    <p class="italic text-gray-700 mb-4">"I thought my husband would fight the new rules, but the 'Partner Alignment Script' from Chapter 3 gave us the tools to communicate without blaming. Total life-saver."</p>
+                    <footer class="font-semibold text-sm text-gray-800">— Michael B., Dad of 1</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Anchor Section (Dedicated Purchase Area) -->
+    <div id="buy_section" class="py-16 text-center bg-indigo-50/50 border-t border-b border-indigo-200">
+        <h4 class="text-3xl font-extrabold mb-4 text-gray-900">Ready to Take The Pledge?</h4>
+        <!-- UPDATED DISCOUNT TEXT -->
+        <p class="text-xl text-gray-700 mb-2 max-w-lg mx-auto">Launch Special! Get the entire 3-step system today for over 50% off.</p>
+        <p class="text-2xl font-bold text-gray-500 mb-8 max-w-lg mx-auto">
+            Regular Price: <span class="line-through mr-3">$19.99</span>
+        </p>
+        
+        <!-- UPDATED CTA BUTTON TO WHOP -->
+        <a href="https://whop.com/parent/the-present-parent-pledge-3f/" target="_blank" class="btn-primary px-10 py-5 text-2xl font-bold text-white bg-red-500 rounded-xl shadow-xl hover:bg-red-600 uppercase tracking-wider">
+            GET INSTANT ACCESS: $9.99
+        </a>
+        <p class="text-sm text-gray-500 mt-4">Secure checkout. Instant delivery.</p>
+    </div>
+
+    <!-- FINAL CALL TO ACTION (CTA Footer) -->
+    <section class="py-16 bg-indigo-600 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl sm:text-4xl font-extrabold mb-4">Stop Wishing You Were Present. Start Being Present.</h3>
+            <p class="text-xl mb-8 opacity-90">
+                This simple system works. Take the pledge and transform your family's connection tonight.
+            </p>
+            <!-- UPDATED CTA BUTTON TO WHOP -->
+            <a href="https://whop.com/parent/the-present-parent-pledge-3f/" target="_blank" class="btn-primary inline-block px-12 py-4 text-xl font-bold text-indigo-600 bg-white rounded-xl shadow-2xl hover:bg-gray-100 uppercase tracking-wider">
+                Download Now for $9.99
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-6 bg-gray-900 text-center text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            &copy; 2025 The Present Parent Pledge. All rights reserved. | Developed by The Pledge Collective.
+            <div class="mt-2">
+                <!-- Links to Terms, Privacy, etc. (Placeholder) --><a href="#" class="hover:text-white mx-2">Privacy Policy</a> |
+                <a href="#" class="hover:text-white mx-2">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
